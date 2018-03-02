@@ -56,7 +56,6 @@ import org.nuxeo.ecm.platform.oauth2.providers.OAuth2ServiceProvider;
 import org.nuxeo.runtime.api.Framework;
 import org.nuxeo.runtime.test.runner.LogCaptureFeature;
 import org.nuxeo.runtime.test.runner.LogFeature;
-import org.nuxeo.runtime.test.runner.RuntimeHarness;
 import org.nuxeo.runtime.transaction.TransactionHelper;
 
 public class TestLiveConnectBlobProvider extends LiveConnectTestCase {
@@ -64,9 +63,6 @@ public class TestLiveConnectBlobProvider extends LiveConnectTestCase {
     private static final String TEST_WORKSPACE = "testWorkspace";
 
     private static final String TEST_FILE_NAME = "LiveConnectFile";
-
-    @Inject
-    private RuntimeHarness harness;
 
     @Inject
     private CoreSession session;

@@ -34,15 +34,11 @@ import org.nuxeo.ecm.core.blob.BlobInfo;
 import org.nuxeo.ecm.core.blob.BlobManager;
 import org.nuxeo.ecm.core.blob.BlobProvider;
 import org.nuxeo.ecm.core.blob.SimpleManagedBlob;
-import org.nuxeo.runtime.test.runner.RuntimeHarness;
 
 public class TestDropboxBlobProvider extends DropboxTestCase {
 
     // same as in test XML contrib
     private static final String PREFIX = "dropbox";
-
-    @Inject
-    protected RuntimeHarness harness;
 
     @Inject
     protected BlobManager blobManager;
@@ -77,4 +73,4 @@ public class TestDropboxBlobProvider extends DropboxTestCase {
         }
     }
 
- }
+}

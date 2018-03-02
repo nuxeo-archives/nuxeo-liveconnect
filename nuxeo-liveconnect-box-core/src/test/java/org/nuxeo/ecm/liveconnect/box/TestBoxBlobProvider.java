@@ -32,12 +32,8 @@ import org.junit.Test;
 import org.nuxeo.ecm.core.blob.BlobManager;
 import org.nuxeo.ecm.core.blob.ManagedBlob;
 import org.nuxeo.ecm.core.blob.SimpleManagedBlob;
-import org.nuxeo.runtime.test.runner.RuntimeHarness;
 
 public class TestBoxBlobProvider extends BoxTestCase {
-
-    @Inject
-    private RuntimeHarness harness;
 
     @Inject
     private BlobManager blobManager;
